@@ -1,49 +1,74 @@
 <html>
     <head>
-        <style>
-            img
-            {
-                border-radius: 50%;
-                display: block;
-                margin-right: auto;
-                margin-left: auto;
-            }
-            body
-            {
-                background-image: url(https://i.pinimg.com/originals/7f/22/bd/7f22bd1107b49b5eac20ce21b80d6489.jpg);
-            }
-            h1, h2, p
-            { 
-            color: #ffffff; 
-            } 
-            h1
-            {
-                text-align: center;
-            }
-            h2
-            {
-                position: relative; left: 250px; top: 2px;
-            }
-            p
-            {
-                position: relative; left: 200px; top: 2px; 
-            }
+        <link rel="stylesheet" href="style.css">
             
-        </style>
         
          <title>Biography Ali Zreim</title>
-             <h1> Ali Zreim </h1>
+         
+             
             
-            <img src="https://lh3.googleusercontent.com/a-/AOh14GjZa1_7-n6roZ1iMsTIht9s3Ss5HciC8vzmWqEP=s288-p-no" alt="Avatar">
+            <!-- <img src="https://lh3.googleusercontent.com/a-/AOh14GjZa1_7-n6roZ1iMsTIht9s3Ss5HciC8vzmWqEP=s288-p-no" alt="Avatar"> -->
     </head>
     <body>
+
+
+        <div class = "title">
+            <h1> Ali Zreim </h1>
+         </div>
+
+        <div class="menu">
+            
+            <div class="toggle"><img src="https://lh3.googleusercontent.com/a-/AOh14GjZa1_7-n6roZ1iMsTIht9s3Ss5HciC8vzmWqEP=s288-p-no" alt="Avatar"></div>
+            <li style = "--i:0;">
+                <a href="https://aliz1.github.io/Website/contactme.html"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:1;">
+                <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:2;">
+                <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:3;">
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:4;">
+                <a href="#"><ion-icon name="key-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:5;">
+                <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:6;">
+                <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+            </li>
+            <li style = "--i:7;">
+                <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+            </li>
+        </div>
+
+        <div class = "info">
+            <h2>Mina kunskaper</h2>
+            <p>⭐Distribuerade Intelligenta System
+            <br>⭐Modeller och verklighet för datateknik 
+            <br>⭐Mobila System <br>⭐System utveckling och projekt för ingenjörer
+            <br>⭐Dator - och internetteknik
+            <br>⭐Objektorienterad programmering
+            <br>⭐Objektorienterad programutveckling, trådar och datakommunikation </p>
+    
+        </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         
-        <h2>Mina kunskaper</h2>
-        <p>⭐Distribuerade Intelligenta System
-        <br>⭐Modeller och verklighet för datateknik 
-        <br>⭐Mobila System <br>⭐System utveckling och projekt för ingenjörer
-        <br>⭐Dator - och internetteknik
-        <br>⭐Objektorienterad programmering
-        <br>⭐Objektorienterad programutveckling, trådar och datakommunikation </p>
+
+    <script>
+        let toggle = document.querySelector('.toggle')
+        let menu = document.querySelector('.menu')
+        toggle.onclick = function()
+        {
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+        
     </body>
 </html>
