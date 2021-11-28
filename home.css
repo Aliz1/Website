@@ -17,7 +17,6 @@
    }
    
    header { background: #41D3BD; }
-   .menuBar {background: #41D3BD ;}
    .main-content { background: #DE6449;}
    .sidebar { background: #407899;}
    
@@ -32,10 +31,10 @@
      
     font-family: "Lato", sans-serif;
      display: grid;
-     grid-template-columns: minmax(1.5em, 1fr) minmax(650px, 960px) 450px minmax(1.5em, 1fr);
+     grid-template-columns: minmax(1.5em, 3fr) minmax(650px, 960px) 450px minmax(1.5em, 1fr);
      grid-template-areas:
-     "header header menu menu"
-     ". main side ."
+     "header header header header"
+     "main main main main"
      "footer footer footer footer"
    }
    
@@ -46,11 +45,11 @@
     {  
      display: grid;
      grid-column: header / header;
-     grid-template-columns: 1fr 1fr 01fr;
+     grid-template-columns: 1fr 1fr 1fr;
      grid-template-areas:
-     ". . headers "
-     ". . paragraph"
-     ". . image"
+     ". headers ."
+     ". paragraph ."
+     ". image ."
       
     } 
     header h1
@@ -70,15 +69,60 @@
       top: -15px;
       grid-area: image;
     }
+    .sidebar
+    {
+      grid-area: side;
+    }
+    .main-content
+    {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+      ". project1-header ."
+      ". project1 ."
+      ". project2-header ."
+      ". project2 ."
+      ". project3-header ."
+      ". project3 ."
+      ". project4-header ."
+      ". project4 ."
+    }
+    .project1-header
+    {
+      grid-area: project1-header ;
+    }
+    .project2-header
+    {
+      grid-area: project2-header ;
+    }
+    .project3-header
+    {
+      grid-area: project3-header ;
+    }
+    .project4-header
+    {
+      grid-area: project4-header ;
+    }
 
-  
-    .main-content { grid-area: main; }
-  .sidebar 
-  { 
-   grid-area: side;
+    .project1
+    {
+      grid-area: project1;
+    }
+    .project2
+    {
+      grid-area: project2 ;
+    }
+    .project3
+    {
+      grid-area:project3 ;
+    }
+    .project4
+    {
+      grid-area: project4 ;
+    }
 
-    overflow-x: hidden;
-  }
+
    /* footer { grid-area: footer; } */
    .MyImage
    {
@@ -98,12 +142,13 @@
    {
      padding: 6px 8px 6px 16px;
      font-size: 25px;
-     color: #f1f1f1;
+     color: black;
      display: block;
    }
    .menuBar
    {
-    grid-area: menu;
+    position: fixed;
+    left: 80%;
    }
    .menuBar .menu 
    {
