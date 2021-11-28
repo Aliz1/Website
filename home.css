@@ -1,0 +1,186 @@
+/* basic styling so we can
+   see what's going on */
+
+   * { box-sizing: border-box; }
+
+   body {
+     margin: 0;
+     min-height: 25vh;
+   }
+   
+   header,
+   .main-content,
+   .menuBar,
+   .sidebar,
+   footer {
+     padding: 2em;
+   }
+   
+   header { background: #41D3BD; }
+   .menuBar {background: #41D3BD ;}
+   .main-content { background: #DE6449;}
+   .sidebar { background: #407899;}
+   
+   footer { background: #694D75;}
+   
+   
+   /* ======================
+      Demo stuff starts here 
+      ========================*/
+   
+   body {
+     
+    font-family: "Lato", sans-serif;
+     display: grid;
+     grid-template-columns: minmax(1.5em, 1fr) minmax(650px, 960px) 450px minmax(1.5em, 1fr);
+     grid-template-areas:
+     "header header menu menu"
+     ". main side ."
+     "footer footer footer footer"
+   }
+   
+  
+   
+   
+   header 
+    {  
+     display: grid;
+     grid-column: header / header;
+     grid-template-columns: 1fr 1fr 01fr;
+     grid-template-areas:
+     ". . headers "
+     ". . paragraph"
+     ". . image"
+      
+    } 
+    header h1
+    {
+      grid-area: headers;
+    }
+    header p
+    {
+      position: relative;
+      top: -15px;
+      left: -100px;
+      grid-area: paragraph;
+    }
+    header img
+    {
+      position: relative;
+      top: -15px;
+      grid-area: image;
+    }
+
+  
+    .main-content { grid-area: main; }
+  .sidebar 
+  { 
+   grid-area: side;
+
+    overflow-x: hidden;
+  }
+   /* footer { grid-area: footer; } */
+   .MyImage
+   {
+     border-radius: 100%;
+     width: 150px;
+     height: auto;
+   }
+   header p
+   {
+     font-size: large;
+   }
+   .sidebar a:hover
+   {
+    color: #09ec7a;
+   }
+   .sidebar a
+   {
+     padding: 6px 8px 6px 16px;
+     font-size: 25px;
+     color: #f1f1f1;
+     display: block;
+   }
+   .menuBar
+   {
+    grid-area: menu;
+   }
+   .menuBar .menu 
+   {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .menuBar  .menu li
+   {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+   }
+   .menuBar .menu li a
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    color: #111;
+    transition: 0.5s;
+   }
+
+   .menuBar .menu li a:hover
+   {
+    color: #ff1252;
+   }
+   .menuBar .menu.menu.active li
+   {
+    transform: rotate(calc(360deg /8 * var(--i)));
+   }
+    .toggle
+   {
+       position: absolute;
+       width: 60px;
+       height: 60px;
+       background: #fff;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 10000;
+       border-radius: 50%;
+       cursor: pointer;
+       box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+       font-size: 2em;
+       transition: 1.25s;
+
+   }
+    .menu.active .toggle
+   {
+       transform: rotate(315deg);
+   }
+   .homeLogo:hover
+   {
+      color: red;
+   }
+   ion-icon {
+    pointer-events: none;
+  }
+    .info
+   {
+       position: relative;
+       margin-left: 10%;
+       margin-right: auto;
+       margin-bottom: 0%;
+       
+   }

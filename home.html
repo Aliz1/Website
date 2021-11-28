@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    
+    <h1>My portfolio</h1>
+    <p>I am a newly graduated computer scientist from Malmö University Sweden</p>
+    <img class = "MyImage" src="https://lh3.googleusercontent.com/a-/AOh14GjZa1_7-n6roZ1iMsTIht9s3Ss5HciC8vzmWqEP=s288-p-no" alt="My picture">
+   
+</div>
+
+
+  </header>
+  <div class="menuBar">
+    <div class = "menu">
+
+      <div class="toggle"><ion-icon name="grid-outline"></ion-icon></div>
+      <li style="--i:0;">
+          <a title = "Home" href="#"><ion-icon name="home-outline" role="img" ></ion-icon></a>
+      </li>
+      <li style="--i:1;">
+          <a title = "About me" href="#"><ion-icon name="person-outline" role="img" class="md hydrated" ></ion-icon></a>
+      </li>
+      <li style="--i:2;">
+          <a title = "My work" href="#"><ion-icon name="briefcase-outline"></ion-icon></a>
+      </li>
+      <li style="--i:3;">
+          <a title = "Contact me" href="#"><ion-icon name="mail-outline" role="img" class="md hydrated" ></ion-icon></a>
+      </li>
+      <li style="--i:4;">
+          <a title = "Key to success" href="#"><ion-icon name="key-outline" role="img" class="md hydrated" ></ion-icon></a>
+      </li>
+      <li style="--i:5;">
+          <a title = "Add me on skype!" href="#"><ion-icon name="videocam-outline" role="img" class="md hydrated" ></ion-icon></a>
+      </li>
+      <li style="--i:6;">
+          <a title = "Games I play" href="#"><ion-icon name="game-controller-outline" role="img" class="md hydrated"></ion-icon></a>
+      </li>
+      <li style="--i:7;">
+          <a title = "Photos of me" href="#"><ion-icon name="camera-outline" role="img" class="md hydrated"></ion-icon></a>
+      </li>
+    </div>
+  </div>
+
+    <div class="main-content">
+      main content
+    </div>
+  </div>
+
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  let toggle = document.querySelector('.toggle')
+  let menu = document.querySelector('.menu')
+  toggle.onclick = function()
+  {
+      menu.classList.toggle('active');
+  }
+</script>
+</html>
