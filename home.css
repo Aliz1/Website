@@ -142,6 +142,7 @@
 
    .menuBar .menu li a:hover
    {
+    transform: rotate(calc(360deg / -8 * var(--i))) scale(1.2);
     color: #ff1252;
    }
    .menuBar .menu.menu.active li
