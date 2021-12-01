@@ -15,6 +15,39 @@
    footer {
      padding: 2em;
    }
+   .project1-header
+   {
+     grid-area: project1-header ;
+   }
+   .project2-header
+   {
+     grid-area: project2-header ;
+   }
+   .project3-header
+   {
+     grid-area: project3-header ;
+   }
+   .project4-header
+   {
+     grid-area: project4-header ;
+   }
+
+   .project1
+   {
+     grid-area: project1;
+   }
+   .project2
+   {
+     grid-area: project2 ;
+   }
+   .project3
+   {
+     grid-area:project3 ;
+   }
+   .project4
+   {
+     grid-area: project4 ;
+   }
    
    header { background: #41D3BD; }
    .main-content { background: #DE6449;}
@@ -49,7 +82,7 @@
      grid-template-areas:
      ". headers ."
      ". paragraph ."
-     ". image ."
+     ". image .";
       
     } 
     header h1
@@ -88,39 +121,7 @@
       ". project4-header ."
       ". project4 ."
     }
-    .project1-header
-    {
-      grid-area: project1-header ;
-    }
-    .project2-header
-    {
-      grid-area: project2-header ;
-    }
-    .project3-header
-    {
-      grid-area: project3-header ;
-    }
-    .project4-header
-    {
-      grid-area: project4-header ;
-    }
-
-    .project1
-    {
-      grid-area: project1;
-    }
-    .project2
-    {
-      grid-area: project2 ;
-    }
-    .project3
-    {
-      grid-area:project3 ;
-    }
-    .project4
-    {
-      grid-area: project4 ;
-    }
+  
 
 
    /* footer { grid-area: footer; } */
