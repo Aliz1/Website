@@ -32,7 +32,7 @@ header,
         font-family: "Lato", sans-serif;
         display: grid;
         background: #ffefc1;
-        grid-template-columns: minmax(925px, 1000px) minmax(925px, 1000px);
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "headers headers"
         "main side"
@@ -41,10 +41,12 @@ header,
    header
    {
        grid-area: headers;
+       height: 17vh;
    }
    .main-content
    {
        grid-area: main;
+       height: 83vh
    }
     .portfolio-section
    {
@@ -55,7 +57,7 @@ header,
    {
        background: red;
         grid-area: portfolio-side;
-        height: 970px;
+        height: 100vh;
    }
    header a
    {
