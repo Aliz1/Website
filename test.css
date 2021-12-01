@@ -95,8 +95,9 @@ header,
    }
    .side-image img
    {
-    position: relative;
-    height: 785px;
+       position: relative;
+    top: 10%;
+    height: 90%;
    }
    .side-image:hover img
    {
