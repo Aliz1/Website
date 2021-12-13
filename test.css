@@ -35,8 +35,7 @@ header,
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "headers headers"
-        "main side"
-        "portfolio portfolio-side"
+        "main side";
    }
    header
    {
@@ -47,17 +46,6 @@ header,
    {
        grid-area: main;
        height: 80vh
-   }
-    .portfolio-section
-   {
-       background: #2600ce;
-        grid-area: portfolio;
-   }
-   .portfolio-side
-   {
-       background: red;
-        grid-area: portfolio-side;
-        height: 100vh;
    }
    header a
    {
