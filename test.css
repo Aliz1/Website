@@ -21,10 +21,10 @@ header,
    header img
    {
        position: relative;
-       top: 35%;
-       left: 150px;
-       width: 100px;
-       height: 100px;
+       top: 10%;
+       left: 15%;
+       width: 8%;
+       height: auto;
    }
 
    body
