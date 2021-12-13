@@ -41,12 +41,12 @@ header,
    header
    {
        grid-area: headers;
-       height: 17vh;
+       height: 20vh;
    }
    .main-content
    {
        grid-area: main;
-       height: 83vh
+       height: 80vh
    }
     .portfolio-section
    {
